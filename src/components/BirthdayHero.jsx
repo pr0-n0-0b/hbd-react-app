@@ -114,7 +114,7 @@ export const BirthdayHero = () => {
             fontSize: '2.1rem',
             lineHeight: 1.6,
             maxWidth: '380px'
-          }}>
+          }}> 
             Today is all about celebrating You. May your year ahead be filled with endless joy, sweet surprises, and unforgettable adventures.
           </p>
 
