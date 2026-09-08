@@ -191,7 +191,7 @@ export const BirthdayHero = () => {
             overflow: 'hidden',
             backdropFilter: 'blur(8px)'
           }}>
-            <iframe 
+            <img
               src="https://tenor.com/embed/26751018" 
               title="Happy Birthday GIF"
               width="100%" 
