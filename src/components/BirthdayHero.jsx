@@ -93,7 +93,7 @@ export const BirthdayHero = () => {
             fontWeight: 700,
             color: 'var(--primary)'
           }}>
-            <span>🌹</span> Happy Birthday!
+            <span>🌹</span> Click Below Candles Multiple Times
           </div>
 
           <h1 style={{
@@ -104,7 +104,7 @@ export const BirthdayHero = () => {
             color: 'var(--text-main)'
           }}>
             <span style={{ fontFamily: "'Monsieur La Doulaise', cursive" }}>
-              Happy Birthday, <span style={{ fontFamily: "'Monsieur La Doulaise', cursive", color: 'var(--primary)' }}>Name</span> ✨
+              Happy Birthday, <span style={{ fontFamily: "'Monsieur La Doulaise', cursive", color: 'var(--primary)' }}>Arshman</span> ✨
             </span>
           </h1>
 
