@@ -192,12 +192,16 @@ export const BirthdayHero = () => {
             backdropFilter: 'blur(8px)'
           }}>
             <img
-              src="https://tenor.com/embed/26751018" 
-              title="Happy Birthday GIF"
-              width="100%" 
-              height="100%" 
-              style={{ border: 'none', borderRadius: '12px', pointerEvents: 'none' }}
-            />
+ src="https://tenor.com/embed/26751018"  
+  alt="Happy Birthday GIF" 
+  style={{
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    borderRadius: '12px',
+    pointerEvents: 'none'
+  }}
+/>
           </div>
         </div>
       </div>
