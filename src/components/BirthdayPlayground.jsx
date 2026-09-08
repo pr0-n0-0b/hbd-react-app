@@ -135,7 +135,10 @@ export const BirthdayPlayground = () => {
                 <div style={{ position: 'absolute', textAlign: 'center', padding: '20px', color: '#403A46', width: '100%', boxSizing: 'border-box', zIndex: 1 }}>
                   <h4 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)', fontWeight: 800, color: '#d63384', marginBottom: '8px' }}>HAPPY BIRTHDAY ✨</h4>
                   <p style={{fontFamily:'Monsieur La Doulaise', fontSize: 'clamp(0.9rem, 2vw, 1.02rem)', fontWeight: 600, lineHeight: 1.5, fontStyle: 'italic' }}>
-                    "Wishing a happiest birthday Arshman! May this year bring you endless joy, incredible adventures, and all the success and happiness your heart desires. Have an amazing day celebrating!"
+                    "Happy Birthday to my Everything!
+😘🎂😘🥀😘🥀🥀🎉
+Happy Birthday to the one who makes my heart smile a little brighter every single day. I hope this year brings you endless happiness, success, good health, and all the beautiful moments you truly deserve. You have a special place in my heart, and I feel lucky just to know you. May your smile never fade, your dreams come true, and your life be filled with love and laughter. Thank you for being such an amazing person. Enjoy your special day to the fullest-you deserve nothing but the best!
+🎂🎂😘🎉😘🎉🥀"
                   </p>
                 </div>
 

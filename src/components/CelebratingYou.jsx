@@ -14,7 +14,7 @@ export const CelebratingYou = () => {
       id: 2,
       title: "Wonderful Memories",
       preview: "Tap to reveal a special note 🎈",
-      secret: "Having a cousin who is truly a sister at heart means everything. Wishing you the happiest birthday and a year filled with wonderful surprises!"
+      secret: "Celebrating the most amazing person in my life. You bring so much happiness, love, and warmth into my world, and I'm truly grateful for every moment we share together."
     },
     {
       id: 3,
