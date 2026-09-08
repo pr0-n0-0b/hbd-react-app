@@ -176,14 +176,16 @@ export const BirthdayHero = () => {
             </p>
           </div>
 
-          {/* Bottom Card: Tenor GIF embed */}
+          import React from 'react';
+// 1. Import your video file (e.g., .mp4 format)
+import birthdayVideo from '../assets/birthday-video.mp4'; 
+
+export const BirthdayHero = () => {
+  return (
+    <header>
+      <div>
+        <div>
           <div style={{
-            width: '320px',
-            height: '200px',
-            background: 'linear-gradient(135deg, var(--card-bg) 0%, rgba(184,161,255,0.15) 100%)',
-            borderRadius: 'var(--radius-lg)',
-            border: '1px solid var(--border-color)',
-            boxShadow: 'var(--shadow-lg)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -191,18 +193,29 @@ export const BirthdayHero = () => {
             overflow: 'hidden',
             backdropFilter: 'blur(8px)'
           }}>
-            <img
- src="https://tenor.com/embed/26751018"  
-  alt="Happy Birthday GIF" 
-  style={{
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    borderRadius: '12px',
-    pointerEvents: 'none'
-  }}
-/>
+            
+            {/* 2. Use the video tag with the required attributes */}
+            <video 
+              src={birthdayVideo} 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: '12px',
+                pointerEvents: 'none'
+              }}
+            />
+
           </div>
+        </div>
+      </div>
+    </header>
+  );
+};
         </div>
       </div>
     </header>
