@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from './Button';
+import birthdayVideo from '../assets/birthday-video.mp4';
 
 export const BirthdayHero = () => {
   const [candlesBlown, setCandlesBlown] = useState(false);
@@ -8,17 +9,15 @@ export const BirthdayHero = () => {
   const triggerCelebration = () => {
     setCandlesBlown(true);
 
-    // Generate 30 floating items across the full screen width
     const newBalloons = Array.from({ length: 30 }).map((_, i) => ({
       id: Date.now() + i,
-      left: Math.random() * 100, // Random percentage across the screen width (0% - 100%)
-      duration: 3 + Math.random() * 2.5, // Random speed between 3s and 5.5s
+      left: Math.random() * 100,
+      duration: 3 + Math.random() * 2.5,
       emoji: ['🎈', '🎉', '✨', '💖', '⭐', '🎂', '🎁'][Math.floor(Math.random() * 7)]
     }));
 
     setBalloons(prev => [...prev, ...newBalloons]);
 
-    // Clean up elements from DOM after animation completes
     setTimeout(() => {
       setBalloons(prev => prev.filter(b => !newBalloons.includes(b)));
     }, 6000);
@@ -36,7 +35,6 @@ export const BirthdayHero = () => {
       position: 'relative',
       overflow: 'hidden'
     }}>
-      {/* Full-screen flying balloons & emojis container */}
       {balloons.map(b => (
         <span
           key={b.id}
@@ -54,7 +52,6 @@ export const BirthdayHero = () => {
         </span>
       ))}
 
-      {/* Inline keyframe style for the full screen balloon fly-up */}
       <style>{`
         @keyframes flyUpFullScreen {
           0% {
@@ -176,16 +173,14 @@ export const BirthdayHero = () => {
             </p>
           </div>
 
-          import React from 'react';
-// 1. Import your video file (e.g., .mp4 format)
-import birthdayVideo from '../assets/birthday-video.mp4'; 
-
-export const BirthdayHero = () => {
-  return (
-    <header>
-      <div>
-        <div>
+          {/* Video Container Card */}
           <div style={{
+            width: '320px',
+            height: '220px',
+            background: 'linear-gradient(135deg, var(--card-bg) 0%, rgba(255,217,142,0.15) 100%)',
+            borderRadius: 'var(--radius-lg)',
+            border: '1px solid var(--border-color)',
+            boxShadow: 'var(--shadow-lg)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -193,8 +188,6 @@ export const BirthdayHero = () => {
             overflow: 'hidden',
             backdropFilter: 'blur(8px)'
           }}>
-            
-            {/* 2. Use the video tag with the required attributes */}
             <video 
               src={birthdayVideo} 
               autoPlay 
@@ -209,13 +202,8 @@ export const BirthdayHero = () => {
                 pointerEvents: 'none'
               }}
             />
-
           </div>
-        </div>
-      </div>
-    </header>
-  );
-};
+
         </div>
       </div>
     </header>
